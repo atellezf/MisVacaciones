@@ -1,33 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="mx.utel.poo.misvac.ProgramaGUI">
-  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="3" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="5" bottom="5" right="5"/>
     <constraints>
-      <xy x="20" y="20" width="1704" height="1048"/>
+      <xy x="20" y="20" width="1010" height="591"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="b94de" class="javax.swing.JLabel">
+      <grid id="209b5" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="960" height="248"/>
+          <grid row="2" column="1" row-span="1" col-span="8" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="baf43" class="javax.swing.JButton" binding="btnGuardar">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="GUARDAR"/>
+            </properties>
+          </component>
+          <component id="62e4" class="javax.swing.JButton" binding="btnLimpiar">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="LIMPIAR"/>
+            </properties>
+          </component>
+          <scrollpane id="6e6b1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="eaf60" class="javax.swing.JTextArea" binding="cmpDetalle">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <vspacer id="f99aa">
+        <constraints>
+          <grid row="2" column="9" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="df56b">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="8358" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="43" height="27"/>
           </grid>
         </constraints>
         <properties>
-          <font name="Verdana" size="48" style="1"/>
-          <foreground color="-1"/>
-          <horizontalAlignment value="2"/>
-          <horizontalTextPosition value="11"/>
-          <icon value="img/travel-banner.png"/>
-          <text value="Mis Próximas Vacaciones"/>
+          <labelFor value="361db"/>
+          <text value="Destino"/>
         </properties>
       </component>
-      <vspacer id="1cc0b">
+      <component id="361db" class="javax.swing.JTextField" binding="cmpDestino">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="27"/>
+          </grid>
         </constraints>
-      </vspacer>
+        <properties/>
+      </component>
+      <component id="9190f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="38" height="27"/>
+          </grid>
+        </constraints>
+        <properties>
+          <labelFor value="aef31"/>
+          <text value="Fecha:"/>
+        </properties>
+      </component>
+      <component id="aef31" class="javax.swing.JTextField" binding="cmpFecha">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="27"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="8c69d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="47" height="27"/>
+          </grid>
+        </constraints>
+        <properties>
+          <labelFor value="ac457"/>
+          <text value="Agregar:"/>
+        </properties>
+      </component>
+      <component id="ac457" class="javax.swing.JComboBox" binding="cmbElementos">
+        <constraints>
+          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="105" height="27"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Pasajero"/>
+            <item value="Traslado"/>
+            <item value="Aereo"/>
+            <item value="Hospedaje"/>
+            <item value="Crucero"/>
+          </model>
+        </properties>
+      </component>
+      <component id="59665" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="40" height="27"/>
+          </grid>
+        </constraints>
+        <properties>
+          <labelFor value="fe17a"/>
+          <text value="Origen:"/>
+        </properties>
+      </component>
+      <component id="fe17a" class="javax.swing.JTextField" binding="cmpOrigen">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="27"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="be433" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="8" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="img/travel-banner.png"/>
+          <text value=""/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
