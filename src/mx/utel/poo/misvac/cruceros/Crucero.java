@@ -1,6 +1,6 @@
 package mx.utel.poo.misvac.cruceros;
 
-public class crucero {
+public class Crucero {
 
         private String naviera;
         private String destino;
@@ -42,7 +42,7 @@ public class crucero {
 
 
 
-    public crucero(String naviera, String destino, int noches, String categoria) {
+    public Crucero(String naviera, String destino, int noches, String categoria) {
         this.naviera = naviera;
         this.destino = destino;
         this.noches = noches;
@@ -56,6 +56,6 @@ public class crucero {
 
     @Override
     public String toString() {
-        return "\tcrucero: %s/%s %d año(s)\n".formatted(naviera, destino, noches,categoria);
+        return "\tCrucero: %s/%s %d /%s año(s)\n".formatted(naviera, destino, noches,categoria);
     }
 }
