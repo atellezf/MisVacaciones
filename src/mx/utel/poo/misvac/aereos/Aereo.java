@@ -34,7 +34,7 @@ public class Aereo
 
     @Override
     public String toString() {
-        return "\tcrucero: %s/%s %d año(s)\n".formatted(origen, destino, horaSalida,horaLlegada);
+        return "\tcrucero: %s/%s/%s/%s año(s)\n".formatted(origen, destino, horaSalida,horaLlegada);
     }
 }
 
